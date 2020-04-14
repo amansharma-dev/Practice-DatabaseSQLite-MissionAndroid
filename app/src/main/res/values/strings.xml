@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Practice-DatabaseSQLite-MissionAndroid</string>
+    <string name="drop_table">DROP TABLE IF EXISTS</string>
 </resources>
