@@ -138,4 +138,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         //close db
         sqLiteDatabase.close();
     }
+
+    public int countBook(){
+        String countQuery = "SELECT * FROM "+Util.TABLE_NAME;
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(countQuery,null);
+        return cursor.getCount();
+    }
 }
